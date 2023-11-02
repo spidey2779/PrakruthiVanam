@@ -1,0 +1,63 @@
+.dealwhiteMain{
+    background-color: white;
+    padding: 20px 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 15px;
+    margin: 0px 20px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+.imageSet{
+   
+    display: flex;
+    align-items: space-between;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
+    min-width: 150px;
+    padding: 0px 10px;
+}
+.imageSet img{
+    height: 150px;
+    width: 160px;
+}
+.productNameInsideWhite{
+    text-align: center;
+}
+@media (width < 1000px){
+    .dealwhiteMain{
+       
+        /* display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto */
+    }
+    .imageSet{
+        display: flex;
+        align-items: center;
+        
+    }
+    .imageSet img{
+        /* background-color: blue; */
+        height: 120px ;
+        width: 150px;
+    }
+    .productNameInsideWhite{
+        font-size: 15px;
+    }
+}
+/* @media all and (min-width: 320px) and (max-width:470px) {
+    .dealwhiteMain{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+} */

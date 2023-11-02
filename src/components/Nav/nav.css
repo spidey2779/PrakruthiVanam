@@ -1,0 +1,127 @@
+
+.navMain{
+    overflow-x: hidden;
+    width: 100%;
+}
+.firstnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(217,255,225);
+    padding: 13px 10px;
+    padding-right: 3vw;
+}
+.part1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:  0px 20px;
+}
+.searchdiv{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 25px;  
+    position: relative;
+}
+.searchdiv input{
+    height: 40px;
+    min-width: 300px;
+    width: 50vw;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 5px 15px;
+    font-size: 17px;
+}
+
+.searchdiv i{
+    padding: 4px;
+    background-color: green;
+    border-radius: 50%;
+    scale: 1.3;
+    color: white;
+    position: absolute;
+    right: 15px;
+    font-size: 10px;
+    
+}
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;
+}
+.part2 i{
+    font-size: 24px;
+}
+.part2 i:hover{
+    scale: 1.1;
+    transition: scale 0.5;
+    cursor: pointer;
+}
+.menu{
+    display: none;
+}
+.secondnav{
+    background-color: green;
+    color: white;
+}
+.itemlist{
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.secondnav ul li{
+    font-size: 20px;
+    cursor: default;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+.secondnav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.4s;
+}
+@media all and (min-width:320px) and (max-width:470px){
+    .itemlist{
+        display: flex;
+        flex-direction: column;
+       row-gap: 10px; 
+       
+    }
+    .itemlist li{
+        border: 1px solid gray;
+        background-color: white;
+        height: 60px;
+        margin-top: 10px;
+        font-size: 35px;
+        padding-left: 50px;
+    }
+    .secondnav{
+        display: none;
+        background-color:rgb(240, 238, 238);
+        color: black;
+    }
+    .menu{
+        display: initial;
+        margin-left: 5px;
+    }
+    .firstnav input{
+        margin-left: 10px;
+    }
+    .firstnav h1{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .search{
+        top: 20px;
+        right: 100px;
+    }
+}

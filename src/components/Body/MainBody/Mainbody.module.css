@@ -1,0 +1,67 @@
+.MainbodyMain {
+    background-color: rgb(208, 247, 255);
+    width: 100%;
+    overflow-x: hidden;
+    padding: 20px 0px;
+   
+}
+.bannerMain {
+    
+     /* Adjust the height as needed */
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; 
+    position: relative;
+}
+
+.Banner {
+    display: inline-block; 
+    
+}
+
+.Banner .linkOne {
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 0 5vw;
+    width: 90vw;
+    /* align-items: center;
+    height: 49vh; */
+    
+}
+
+.Banner a img {
+    width: 90vw;
+    height: 49vh;
+    transition: transform 0.5s ease-in-out;
+    margin: 0 auto;
+}
+
+.Banner a:hover img {
+    transform: scale(1.1);
+}
+
+/* Media queries for responsive adjustments */
+
+@media (max-width: 1000px) {
+    .Banner a img{
+        height: 200px;
+        width: 95vw;
+    }
+    .Banner .linkOne{
+        align-items: start;
+        height: fit-content;
+    }
+}
+@media (max-width: 700px) {
+    .Banner a img{
+        height: 150px;
+        width: 95vw;
+    }
+    .Banner .linkOne{
+        align-items: start;
+        height: fit-content;
+    }
+}
+

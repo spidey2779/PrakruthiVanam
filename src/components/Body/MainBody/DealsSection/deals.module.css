@@ -1,0 +1,16 @@
+.dealMain{
+    width: 100vw;
+    height: fit-content;
+    overflow-x: auto;
+}
+.MainpageProductsTitle{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+@media (width < 768px){
+    .MainpageProductsTitle{
+        font-size: 22px;
+    
+    }  
+}
