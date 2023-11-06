@@ -34,12 +34,12 @@ a{
     text-align: center;
 }
 @media (width < 1000px){
-    .dealwhiteMain{
+    /* .dealwhiteMain{
        
         /* display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: auto */
-    }
+    /* } */ 
     .imageSet{
         display: flex;
         align-items: center;

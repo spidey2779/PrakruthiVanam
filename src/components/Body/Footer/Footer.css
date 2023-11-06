@@ -1,4 +1,6 @@
 
+
+
 .footer{
     display: flex;
     justify-content: space-around;
@@ -6,8 +8,18 @@
     font-weight: bold;
     padding: 15px;
 }
+.footerfirst{
+   display: flex;
+   flex-direction: column;
+   align-items: space-between;
+   gap: 5px;
+}
 .footerfirst p{
     font-size: 15px;
+}
+.footerfirst p:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 .footerlast{
     background-color: black;
@@ -17,6 +29,7 @@
     text-align: center;
     padding: 5px;
     font-weight: 600;
+    cursor: default;
 }
 .footersecond{
    display: flex;
@@ -26,6 +39,9 @@
    height: fit-content;
 
 }
+.footersecond h3{
+    cursor: default;
+}
 .footericons{
     display: flex;
     align-items: center;
@@ -33,19 +49,35 @@
     font-size: 20px;
 }
 
+.footerthird{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    cursor: default;
+}
+.footerthird h3{
+    font-size: 20px;
+    font-weight: 750;
+}
 
-
-.footerthird span{
+.footwrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 7px;
     font-size: 15px;
+
 }
 
 @media all and (min-width:320px) and (max-width:600px){
     .footer{
-        height: 200px;
+        
         display: grid;
         grid-template-areas:
         "fir third"
         "sec  sec"      ;
+        padding: 10px 5px;
     }
     .footerfirst{
         grid-area: fir;
@@ -61,8 +93,5 @@
     } 
     .footerlast p{
         font-size: 15px;
-    }
-    .footerthird h3{
-        text-align: center;
     }
 }

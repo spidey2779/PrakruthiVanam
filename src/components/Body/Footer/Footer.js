@@ -3,8 +3,11 @@ import './Footer.css';
 import {BsFacebook} from 'react-icons/bs';
 import {FaSquareInstagram} from 'react-icons/fa6';
 import {BsYoutube} from 'react-icons/bs';
-import {AiFillTwitterCircle} from 'react-icons/ai';
-import {FaSquareWhatsapp} from 'react-icons/fa6';
+import {AiFillTwitterCircle, AiOutlineClockCircle} from 'react-icons/ai';
+import {IoLogoWhatsapp} from 'react-icons/io';
+import {FaLocationDot} from 'react-icons/fa6';
+import {PiPhoneCallFill} from 'react-icons/pi';
+import {FiMail} from 'react-icons/fi';
 function Footer() {
   return (
     <div className='footerdiv'>
@@ -23,19 +26,27 @@ function Footer() {
         <a href="/"><FaSquareInstagram className='footIcon'/></a>
         <a href="/"><BsYoutube className='footIcon'/></a>
         <a href="/"><AiFillTwitterCircle className='footIcon'/></a>
-        <a href="/"><FaSquareWhatsapp className='footIcon'/></a>
+        <a href="/"><IoLogoWhatsapp className='footIcon'/></a>
         </div>
       </div>
       <div className='footerthird'>
-        <h3>Contact Us</h3> 
-        {/* <i class="fas fa-map-marker-alt"></i>
-        <span>Madanapalle</span><br/>
-        <i class="fas fa-phone-alt"></i>
-        <span>+91 8773483848</span><br/>
-        <i class="far fa-clock"></i>
-        <span>Timing:Mon to Sat 6am to 9pm</span><br/>
-        <i class="far fa-envelope"></i> */}
-        <span>prakruthivanam@gmail.com</span>
+        <h3>Contact Us</h3>
+        <div className="footwrapper"> 
+          <h4>madanapalle</h4> 
+          <FaLocationDot/>
+        </div>
+        <div className="footwrapper"> 
+        <h4>+91 2398742834</h4> 
+          <PiPhoneCallFill/>
+        </div>
+        <div className="footwrapper"> 
+          <h4>Timing : mon to sat 6am to 9pm</h4> 
+          <AiOutlineClockCircle/>
+        </div>
+        <div className="footwrapper"> 
+          <h4>prakruthivanam@gamil.com</h4> 
+          <FiMail/>
+        </div>
       </div>
       </div>
       <div className='footerlast'>
