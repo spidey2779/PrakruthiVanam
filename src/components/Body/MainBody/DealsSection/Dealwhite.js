@@ -3,7 +3,7 @@ import classes from './dealwhite.module.css'
 const Dealwhite = (props) => {
   return (
     <div className={classes.dealwhiteMain}>
-      <a href={props.deal.productOneLink} className={classes.imageSet}>
+      <a href={props.deal.productOneLink} className={ `${classes.imageSet} ${classes.spaceImage} ` } >
         <img src={props.deal.productOneImage} alt="" />
         <h3 className={classes.productNameInsideWhite}>{props.deal.productOneTitle}</h3>
       </a>

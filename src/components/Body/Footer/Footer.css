@@ -82,6 +82,9 @@
     .footerfirst{
         grid-area: fir;
     }
+    .footerfirst p{
+        font-size: 12px;
+    }
     .footerthird{
         grid-area: third;
     }
@@ -93,5 +96,8 @@
     } 
     .footerlast p{
         font-size: 15px;
+    }
+    .footerthird h4{
+        font-size: 12px;
     }
 }
