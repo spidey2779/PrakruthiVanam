@@ -136,33 +136,100 @@
 }
 .disNone{
     display: none;
-
 }
 
 /* media queries */
 @media screen and (width < 900px) {
     /* side bar */
+   
     .sideBar{
         position: absolute;
         background-color: rgb(236,235,235) ;
-        height: calc(100vh - 57px);
+        min-height: calc(105vh - 57px);
+        max-height: fit-content;
         width: 300px;
         z-index: 100;
         left: 0px;
         top: 57px;
         box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        /* display: flex;
+        flex-direction: column ;
+        align-items: space-between; */
         
     }
-    .backdrop {
+    .backdrop{
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0);
+        /* background:black; */
         z-index: 99;
       }
-      
+    /* side bar top  */
+    .sidebarTop{
+        background: black;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+ 
+    .topleftSidebar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 13px;
+
+    }
+    .topleftSidebarText{
+        color: white;
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .barUsericon{
+        color: green;
+        background-color: white;
+        font-size: 30px;
+        border-radius: 50%;
+    }
+    /* cross mark */
+    .crossmark{
+        color: white;
+        font-size: 25px;
+    }
+/* middle side bar */
+    .sidebarMiddle{
+        display: flex;
+        flex-direction: column;
+        align-items: space-evenly;
+        gap: 10px;
+        padding: 10px 0px;
+    }
+    .middlebarChild{
+        background-color: #dadada;
+        text-align: justify;
+        padding: 7px 40px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+/* bottom sidebar */
+.sidebarBottom{
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    gap: 15px;
+    justify-content: center;
+    height: 100%;
+}
+.sidebarBottomChild{
+    text-align: center;
+    
+}
+
+/* side bar completed */
     .secondnav{
         display: none;
     }
@@ -209,7 +276,8 @@
 @media screen and (width < 500px) {
     .sideBar{
         top: 45px;
-        height: calc(100vh - 46px);
+        max-height: fit-content;
+        min-height: calc(105vh - 46px);
     }
      .firstnav{
         padding: 7px 0px;
@@ -250,5 +318,10 @@
         justify-content: center;
         align-items: center;
         right: -10px;
+    }
+}
+@media screen and (width < 400px) {
+    .sideBar{
+        width: 250px;
     }
 }
