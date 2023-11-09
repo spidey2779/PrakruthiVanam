@@ -1,0 +1,79 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.wrapper{
+    overflow: hidden;
+}
+.signUPForm {
+    max-width: 400px;
+    margin: 15vh auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* max-height: 50vh;
+    min-height: 400px; */
+    
+}
+
+.signUPForm input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.signUPbtn{
+    
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(12, 90, 225);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10%;
+    font-size: 20px;
+    font-weight: bold;
+  
+}
+.signUPForm h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.signUPForm p {
+  text-align: center;
+  margin-top: 10px;
+}
+::placeholder {
+  color: black;
+}
+
+.loginlink{
+    color: blue;
+    font-size: 18px;
+}
+.loginlink:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .signUPForm {
+      width: 80%;
+    }
+    .signUPbtn{
+        font-size: 17px;
+    }
+    .loginlink{
+      font-size: 17px;
+  }
+  }

@@ -1,3 +1,7 @@
+
+.mainLogin{
+  overflow: hidden;
+}
 .login-form {
     max-width: 400px;
     margin: 15vh auto;
@@ -6,8 +10,8 @@
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-height: 50vh;
-    min-height: 400px;
+    /* max-height: 50vh;
+    min-height: 400px; */
   }
   .login-form h2{
     text-align: center;
@@ -34,24 +38,47 @@
     margin-top: 10px;
   }
   
-  .loginbutton {
+  .loginbutton{
     width: 100%;
     padding: 10px;
-    background-color: cyan;
-    color: black;
+    background-color:rgb(12, 90, 225);
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 5vh;
+    margin-top: 10%;
     font-size: 20px;
     font-weight: bold;
   }
  .loginbutton:hover{
-  background-color:rgb(12, 225, 225);
+  background-color:rgb(22, 41, 168);
   }
-  
+  .belowLoginSession{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .signupLink{
+      color: blue;
+      font-size: 20px;
+  }
+  .forgotLink{
+    color: blue;
+    font-size: 20px;
+
+  }
+  .signupLink:hover,.forgotLink:hover{
+    text-decoration: underline;
+  }
   @media (max-width: 768px) {
     .login-form {
       width: 80%;
     }
+    .signupLink{
+      font-size: 17px;
+  }
+  .forgotLink{
+    font-size: 17px;
+
+  }
   }
